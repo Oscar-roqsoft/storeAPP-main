@@ -40,7 +40,7 @@
                     <div v-for="image in images">
                         <div class="h-[56px] w-[56px] bg-white flex items-center justify-center 
                         flex-shrink-0 rounded-xl">
-                        <img src="/favourite-img/nike-23.png" alt="">
+                        <img :src="image" alt="">
                         </div>
                     </div>
                     
