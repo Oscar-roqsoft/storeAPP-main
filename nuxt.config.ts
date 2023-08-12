@@ -4,28 +4,23 @@
 // import { resolve }  from "path"
 
 export default defineNuxtConfig ({
-  // devtools: { enabled: true },
+  ssr: true,
+  components: true,
+  
   modules: [
-  "@pinia/nuxt",
+     "@pinia/nuxt",
 
 ],
 
  pages: true,
 
+ nitro: {
+  prerender: {
+    crawlLinks: true,
+  },
+},
 
 
-  // nitro: {
-  //   prerender: {
-  //     crawlLinks: true
-  //   },
-  //   preset: 'node-server'
-
-  // },
- 
-  // alias:{
-  //   "@": resolve(__dirname,"/")
-  //   // assets: "/<rootDir>/assets"
-  //  }, 
   css: ['~/assets/main.css'],
   postcss: {
     plugins: {
@@ -36,7 +31,7 @@ export default defineNuxtConfig ({
   
 
   app: {
-    baseURL: '/storeAPP/',
+    
     head: {
       script: [{
         src:'https://kit.fontawesome.com/0289b0344f.js',

@@ -71,7 +71,7 @@
                         <nuxt-link to="details" class="text-sm text-[#0D6EFD]">see all</nuxt-link>
                     </div>
                     <div   class="grid grid-cols-2 gap-3 my-4 " >
-                       <div v-for="product in userStore.products" :key="product">
+                       <div v-for="product in filteredPro" :key="product">
                             <nuxt-link :to="`/items/${product.id}`" 
                                  >
                                  <div class="card w-full bg-white rounded-xl">
@@ -149,20 +149,9 @@ const homeImgs=[{
    image6: "/home-img/Ellipse3.png"
 }]
 
-const products = [
-    {
-        id: 1,
-        img: "/home-img/nike1.png",
-        desc: 'Nike Jordan',
-        price: 320,
-    },
-    {
-        id: 2,
-        img: "/home-img/nike2.png",
-        desc: 'Nike Air Jordan ',
-        price: 220,
-    }
-]
+const filteredPro = computed(() => {
+  return userStore.products.filter((product) => product.id === 0  || product.id === 1   )
+})
 
 const showIcon =()=>{
     products.forEach((prod)=>{
