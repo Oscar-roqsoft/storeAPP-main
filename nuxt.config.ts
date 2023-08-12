@@ -5,20 +5,14 @@
 
 export default defineNuxtConfig ({
   ssr: true,
-  components: true,
   
   modules: [
      "@pinia/nuxt",
 
 ],
 
- pages: true,
 
- nitro: {
-  prerender: {
-    crawlLinks: true,
-  },
-},
+
 
 
   css: ['~/assets/main.css'],
