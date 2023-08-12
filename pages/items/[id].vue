@@ -3,9 +3,9 @@
         <div class="mx-auto">
             <section class="px-[20px] pt-6 h-[44px] flex-shrink-0 
             flex justify-between items-center">
-                <nuxt-link to="home" class="">
+                <button @click="navigateTo('/home')">
                     <arrow class="text-xl bg-slate-200 p-2 border rounded-full w-8 h-8"/>
-                </nuxt-link>
+                </button>
                 <div>
                     <h1 class="text-lg">Sneaker Shop</h1>
                 </div>
@@ -17,7 +17,7 @@
             <section class="mt-7 px-[20px] text-sm">
                 <p class="text-xl font-[600] leading-snug">Nike Air Max 270 <br> Essential</p>
                 <span class="text-gray-400">Men’s Shoes</span>
-                <p class="text-xl font-[600]">$179.39</p>
+                <p clamnss="text-xl font-[600]">$179.39</p>
             </section>
                  
                
@@ -31,7 +31,7 @@
                 <div class=" flex justify-center items-center ">
                    <div class=" relative bottom-3 flex justify-between bg-gray-500 
                    text-white rounded-lg p-1 w-12">
-                        <arrow @click="currentImage == image" />
+                        <arrow />
                         <arrow-right />
                    </div>
                 </div>
@@ -40,7 +40,8 @@
                     <div v-for="image in images">
                         <div class="h-[56px] w-[56px] bg-white flex items-center justify-center 
                         flex-shrink-0 rounded-xl">
-                        <img :src="image" alt="">
+                        <img @click="currentImage = image"
+                         :src="image" >
                         </div>
                     </div>
                     
@@ -83,19 +84,21 @@ const currentImage = ref(null)
 const navigate = ()=>{
  return navigateTo('/home')
 }
+
 onMounted(() => {
     watchEffect(()=>{
-        currentImage.value = "/balenciaga.jpeg"
-        images.value[0] = "/lapstand.jpeg"
+        currentImage.value = "/favourite-img/HeroImage.png";
+        images.value[0] =  "/favourite-img/HeroImage.png";
     })
+        
 })
 
 
 const images = ref([
     " ",
    "/favourite-img/HeroImage.png",
-   "/favourite-img/nike-23.png",
-   "/favourite-img/nike-zoom.png",
-   "/favourite-img/PngItem_5550642(2)1.png",
+   "/favourite-img/HeroImage.png",
+   "/favourite-img/HeroImage.png",
+   "/favourite-img/HeroImage.png",
 ])
 </script>

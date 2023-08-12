@@ -15,7 +15,8 @@ const showMenu = ()=>{
                     <div>
                         <h1 class="text-lg">My Cart</h1>
                     </div>
-                    <div class="" >
+                    
+                    <div>
                     </div>
                 </section>
 
@@ -114,9 +115,10 @@ const showMenu = ()=>{
 
 </template>
 
-<!-- <style scoped>
+<style scoped>
 .map{
-    /* background: url("/public/favourite-img/rectangle1066.png"); */
-    /* background-size: cover; */
+     background: url("/public/favourite-img/rectangle1066.png"); 
+     background-size: cover; 
+     background-position: center;
 }
-</style> -->
+</style>

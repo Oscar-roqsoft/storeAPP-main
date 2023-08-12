@@ -19,7 +19,19 @@ export const useUserStore = defineStore('user', {
             img: "/home-img/nike2.png",
             desc: 'Nike Air Jordan ',
             price: 220,
-        }
+        },
+        {
+          id: 1,
+          img: "/home-img/nike1.png",
+          desc: 'Nike Jordan',
+          price: 390,
+      },
+      {
+          id: 2,
+          img: "/home-img/nike2.png",
+          desc: 'Nike Air Jordan ',
+          price: 420,
+      }
     ]
   }),
   persist: true
