@@ -5,15 +5,18 @@
 
 export default defineNuxtConfig ({
   ssr: true,
-  
+  pages: true,
+  components: true,
   modules: [
      "@pinia/nuxt",
 
 ],
 
-
-
-
+nitro: {
+  prerender: {
+    routes: ['/404.html']
+  }
+},
 
   css: ['~/assets/main.css'],
   postcss: {
