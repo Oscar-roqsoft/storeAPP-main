@@ -68,14 +68,14 @@
                 <section class="px-4">
                     <div class="flex justify-between font-[Raleway]">
                         <span class="text-md capitalize">popular Shoes</span>
-                        <nuxt-link to="details" class="text-sm text-[#0D6EFD]">see all</nuxt-link>
+                        <nuxt-link to="" class="text-sm text-[#0D6EFD]">see all</nuxt-link>
                     </div>
                     <div   class="grid grid-cols-2 gap-3 my-4 " >
                        <div v-for="product in filteredPro" :key="product">
                             <nuxt-link :to="`/items/${product.id}`" 
                                  >
                                  <div class="card w-full bg-white rounded-xl">
-                                    <div @click ="showIcon" >
+                                    <div @click="showIcon" >
                                     <heart-icon   v-if="isIcon"/>
                                     <heart-icon-red  v-else  /> 
                                     </div>
@@ -103,7 +103,7 @@
                 <section class="mt-4  px-4">
                     <div class="flex justify-between mt-2 mb-4">
                         <span class="text-sm">New Arrivals</span>
-                        <nuxt-link to="details" class="text-sm text-[#0D6EFD]">see all</nuxt-link>
+                        <nuxt-link to="" class="text-sm text-[#0D6EFD]">see all</nuxt-link>
                     </div>
                     <div class="min-h-[107px] grid grid-cols-2 bg-white rounded-xl">
                         <div class="flex flex-col justify-center items-center">
