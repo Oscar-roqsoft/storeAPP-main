@@ -4,7 +4,7 @@
 // import { resolve }  from "path"
 
 export default defineNuxtConfig ({
-  ssr: false,
+  ssr: true,
   
   modules: [
      "@pinia/nuxt",
