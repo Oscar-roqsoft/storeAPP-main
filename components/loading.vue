@@ -1,7 +1,7 @@
 <template>
     <div class="animate-pulse">
        <div class="flex flex-col justify-center place-items-center h-screen">
-          <img src="/img/nike.png" alt="" class="animate-">
+          <img src="/img/nike.png" alt="" class="">
        </div> 
     </div>
 </template>
