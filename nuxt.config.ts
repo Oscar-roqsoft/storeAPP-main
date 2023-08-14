@@ -4,19 +4,17 @@
 // import { resolve }  from "path"
 
 export default defineNuxtConfig ({
-  ssr: true,
-  pages: true,
-  components: true,
+  ssr: false,
+  
   modules: [
      "@pinia/nuxt",
 
 ],
-
-nitro: {
-  prerender: {
-    routes: ['/404.html']
-  }
+experimental: {
+  payloadExtraction: false
 },
+
+
 
   css: ['~/assets/main.css'],
   postcss: {

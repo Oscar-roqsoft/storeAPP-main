@@ -1,9 +1,4 @@
-<!-- <script scoped>
-  let show = ref(true)
-  let showModal = ()=>{
-    show.value = !show.value
-  }
-</script> -->
+
 <template>
     <div  class="w-screen h-screen bg-white font-sans">
         <nuxt-link to="recovery" class=" ">
@@ -35,3 +30,11 @@
         </div>
     </div>
 </template>
+
+
+<!-- <script scoped>
+  let show = ref(true)
+  let showModal = ()=>{
+    show.value = !show.value
+  }
+</script> -->

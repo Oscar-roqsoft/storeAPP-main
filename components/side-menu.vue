@@ -32,7 +32,7 @@
              <p class="px-[25px]">favourite</p>
            </nuxt-link>
 
-           <nuxt-link to="" class="capitalize flex my-[40px] h-[24px] items-center">
+           <nuxt-link to="checkout" class="capitalize flex my-[40px] h-[24px] items-center">
              <MotorIcon class="text-[24px]"/>
              <p class="px-[25px]">order</p>
            </nuxt-link>

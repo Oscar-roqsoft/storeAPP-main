@@ -1,8 +1,8 @@
 <template>
     <div>
-        <div class="mx-auto">
-            <section class="px-[20px] pt-6 h-[44px] flex-shrink-0 
-            flex justify-between items-center">
+        <div class="mx-auto fixed">
+            <section class="px-[20px] relative min-h-[44px] pt-6  flex-shrink-0 
+            flex justify-between items-center z-50">
                 <button @click="navigateTo('/home')">
                     <arrow class="text-xl bg-slate-200 p-2 border rounded-full w-8 h-8"/>
                 </button>
@@ -23,8 +23,8 @@
                
 
 
-            <section class="relative top-[92px] px-[20px]">
-                <div class="absolute top-[-271px]">
+            <section class=" px-[20px] mt-14 ">
+                <div class="absolute -top-2 z-10">
                     <img :src="currentImage" alt="">
                 </div>
                 <img src="/favourite-img/Ellipse5.png" alt="">
@@ -48,7 +48,7 @@
                 </div>
             </section>
 
-            <section class="mt-[130px] px-[20px] text-sm">
+            <section class=" px-[20px] text-sm">
                 <p class="text-gray-500">The Max Air 270 unit delivers unrivaled, 
                     all-day comfort. The sleek, running-inspired design roots you to everything Nike........
                 </p>

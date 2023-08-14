@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-black">
+    <div>
         <div class="min-h-screen w-screen bg-[#f7f7f9] font-sans">
             <div class="mx-auto ">
                  <navbar />

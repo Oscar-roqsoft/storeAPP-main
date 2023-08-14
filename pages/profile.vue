@@ -50,7 +50,7 @@ const showMenu = ()=>{
                  </div>
 
                  <nuxt-link to="">
-                    <button class="p-[14px] text-sm bg-[#0D6EFD] rounded-lg w-full text-white capitalize">save Now</button>
+                    <button class="p-2.5 text-sm bg-[#0D6EFD] rounded-lg w-full text-white capitalize">save Now</button>
                  </nuxt-link>
             </section>
         </div>
