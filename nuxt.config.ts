@@ -5,15 +5,15 @@
 
 export default defineNuxtConfig ({
   ssr: true,
-  
+  pages: true,
   modules: [
-     "@pinia/nuxt",
-
+    "@pinia/nuxt", 
 ],
+
+
 experimental: {
   payloadExtraction: false
 },
-
 
 
   css: ['~/assets/main.css'],
@@ -26,21 +26,18 @@ experimental: {
   
 
   app: {
-    baseURL: '/storeAPP/',
     head: {
-      script: [{
-        src:'https://kit.fontawesome.com/0289b0344f.js',
-        async: true,
-        crossorigin:'anonymous'
-      }],
-
-      link:[{
-        rel:"stylesheet",
-        href:"https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-      }]
-
+      title: 'Title',
+      meta: [
+          { charset: 'utf-8' },
+          { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+          {
+              hid: 'description',
+              name: 'description',
+              content: 'my website description'
+          }
+      ],
     },
-
     pageTransition:{
       name: 'page', 
       mode: 'in-out'

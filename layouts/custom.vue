@@ -8,12 +8,13 @@
 
 
 
-<script setup>
+<script setup lang="ts">
 
 const isloading = ref(true)
 
-onMounted(() => {
-     setTimeout(() => isloading.value = false, 3000)  //for page loader
+watchEffect(()=>{
+    setTimeout(() => isloading.value = false, 3000)  //for page loader
     })
+
 
 </script>

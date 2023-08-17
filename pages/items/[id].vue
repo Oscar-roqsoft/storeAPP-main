@@ -101,4 +101,4 @@ const images = ref([
    "/favourite-img/HeroImage.png",
    "/favourite-img/HeroImage.png",
 ])
-</script>
+</script>src/stores/user../../stores/user

@@ -1,7 +1,7 @@
 <template>
    <div class="">
         <transition name="slide-fade">
-                <side-menu v-if="show"  @click="showMenu" class="fixed z-50 " />
+            <side-menu v-if="show"  @click="showMenu" class="fixed z-50 " />
         </transition>
 
         <div v-for="image in homeImgs" :key="image" class="min-h-screen pb-40 w-screen bg-[#f7f7f9] font-sans">
@@ -30,8 +30,8 @@
                         </nuxt-link>
                     </div>
                 </nav>
-                <section class="flex-shrink-0 
-                flex justify-between items-center px-[20px] pt-[16px]">
+                <section class="flex-shrink-0
+                     flex justify-between items-center px-[20px] pt-[16px]">
                     <hamburger @click="showMenu" class="text-xl font-bold" />
                     <div>
                         <img :src="image.image1" class="absolute  top-[10px] left-[30vw]">
@@ -207,4 +207,4 @@ const showIcon =()=>{
   transform: translateX(-100%);
   opacity: 0.8;
 }
-</style>
+</style>src/stores/user../stores/user
