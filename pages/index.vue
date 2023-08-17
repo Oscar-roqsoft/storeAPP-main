@@ -1,7 +1,7 @@
 <template>
     <div>
         <div v-for="(item,index) in items" :key="index" 
-          class="w-full block  m-auto h-screen transition-all">
+          class="w-full block  m-auto transition-all">
            <!-- index section -->
             <div v-if="index === count">
                <div class="fixed top-4 left-0 w-full">

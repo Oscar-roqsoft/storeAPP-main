@@ -4,7 +4,7 @@
             <side-menu v-if="show"  @click="showMenu" class="fixed z-50 " />
         </transition>
 
-        <div v-for="image in homeImgs" :key="image" class="min-h-screen pb-40 w-screen bg-[#f7f7f9] font-sans">
+        <div v-for="image in homeImgs" :key="image" class=" pb-40 bg-[#f7f7f9] font-sans">
            <div class="w-full mx-auto">
                 <nav class="fixed w-full mx-auto left-0 bottom-0  z-[1] ">
                     <img :src="image.image" alt="" class="fixed left-0 bottom-0 z-[-1]">

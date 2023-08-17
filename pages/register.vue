@@ -7,7 +7,7 @@ const showMenu = ()=>{
 
 
 <template>
-    <div class="w-screen max-h-screen bg-white  mt-[9px] font-san">
+    <div class=" bg-white  mt-[9px] font-san">
         <nuxt-link to="sign-in" class="w-[44px]">
             <arrow class="text-3xl bg-slate-100 p-[14px] ml-4  h-[44px] w-[44px] rounded-full"/>
         </nuxt-link>

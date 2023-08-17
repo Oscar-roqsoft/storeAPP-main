@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen w-screen bg-[rgb(247,247,249)]  font-sans">
+    <div class=" bg-[rgb(247,247,249)]  font-sans">
         <div class="">
             <section class="px-[20px] pt-6 h-[44px] flex-shrink-0 
                 flex justify-between items-center">

@@ -5,7 +5,7 @@ const showMenu = ()=>{
 }
 </script>
 <template>
-    <div class="min-h-screen w-screen bg-[#f7f7f9] font-sans">
+    <div class=" bg-[#f7f7f9] font-sans">
         <div class="mx-auto">
                 <section class="px-[20px] pt-6 h-[44px] flex-shrink-0 
                     flex justify-between items-center">
