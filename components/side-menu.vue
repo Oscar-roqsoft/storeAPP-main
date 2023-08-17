@@ -1,8 +1,8 @@
 
 
 <template>
-    <div  class="w-full h-screen text-white bg-[#1483C2] fixed  z-50 ">
-        <div class="px-[20px] py-8">
+    <div  class="w-full h-screen overflow-hidden text-white bg-[#1483C2] fixed  z-50 ">
+        <div class="px-[20px] py-6">
           <div class="h-[80px] w-[80px] p-1 mb-[16px] flex justify-center items-center 
            bg-[#0D6EFD] rounded-full border-2 border-white">
                     <img src="/checkout-img/my-photo.jpg" alt="" class="w-full rounded-full">

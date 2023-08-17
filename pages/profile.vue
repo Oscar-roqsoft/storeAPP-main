@@ -1,4 +1,7 @@
 <script setup>
+definePageMeta({
+    layout: "loginlayout",
+})
 const show = ref(true)
 const showMenu = ()=>{
     show.value = !show.value
@@ -6,8 +9,8 @@ const showMenu = ()=>{
 </script>
 
 <template>
-    <div class=" bg-[#f7f7f9] rounded-[20px] font-sans">
-        <div class=" mx-auto ">
+    <div class=" bg-[#f7f7f9] h-screen rounded-[20px] ">
+        <div class=" ">
             <section class=" h-[44px] flex-shrink-0 
                 flex justify-between items-center px-[20px] pt-6">
                 <nuxt-link to="home" class="">
@@ -37,11 +40,11 @@ const showMenu = ()=>{
                  <input type="text" placeholder="enter your name " class="p-[10px] w-full outline-none rounded-lg">
                  <p class="my-[16px] text-sm">Password</p>
                  <div v-if="show" class="flex relative p-icon animate__animated  animate__fadeIn">
-                    <input type="password" placeholder="* * * * * * " class="p-[10px] w-full  bg-gray-200  outline-none rounded-lg">
+                    <input type="password" placeholder="* * * * * * " class="p-[10px] w-full  bg-white  outline-none rounded-lg">
                     <a @click="showMenu"><hide-icon  class="absolute right-[23px] translate-y-[15px]"/></a>
                 </div>
                 <div v-else class="flex relative p-icon animate__animated  animate__fadeIn ">
-                    <input type="text" placeholder="oscar " class="p-[10px]   w-full  bg-gray-200  outline-none rounded-lg">
+                    <input type="text" placeholder="oscar " class="p-[10px]   w-full  bg-white  outline-none rounded-lg">
                     <a @click="showMenu"><show-icon class="absolute right-[23px] translate-y-[15px] "/></a>
                 </div>
 

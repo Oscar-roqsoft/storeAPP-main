@@ -1,6 +1,6 @@
 <template>
     <div class=" bg-[rgb(247,247,249)]  font-sans">
-        <div class="">
+        <div >
             <section class="px-[20px] pt-6 h-[44px] flex-shrink-0 
                 flex justify-between items-center">
                 <nuxt-link to="home" class="">

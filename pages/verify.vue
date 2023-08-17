@@ -18,7 +18,7 @@
             </div>
         </div>
         <div class="px-5">
-            <button class="bg-[#0D6EFD]  w-full mt-4 inline-block font-[600] text-[16px] p-3 rounded-xl text-white mb-1">verify</button>
+            <button class="bg-[#0D6EFD]  w-full mt-4 inline-block font-[600] text-[16px] p-2 rounded-xl text-white mb-1">verify</button>
         </div>
         <div class="flex justify-between mt-[10px] text-sm text-gray-400 px-5">
             <span>resend code</span>
@@ -32,9 +32,12 @@
 </template>
 
 
-<!-- <script scoped>
-  let show = ref(true)
-  let showModal = ()=>{
-    show.value = !show.value
-  }
-</script> -->
+<script scoped>
+definePageMeta({
+    layout: "loginlayout",
+})
+//   let show = ref(true)
+//   let showModal = ()=>{
+//     show.value = !show.value
+//   }
+</script> 

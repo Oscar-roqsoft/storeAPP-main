@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-[#f7f7f9] font-sans">
+    <div class="bg-[#f7f7f9] h-screen font-sans">
         <div class="mx-auto">
             <section class="h-[44px] flex-shrink-0 
                 flex justify-between items-center px-[20px] pt-6">
@@ -60,3 +60,9 @@
         </div>
     </div>
 </template>
+
+<script setup>
+definePageMeta({
+    layout: "loginlayout",
+})
+</script>

@@ -19,7 +19,7 @@
 
         <nuxt-link to="verify" class="flex flex-col justify-center px-4">
           
-            <button class="bg-[#0D6EFD] inline-block text-[14px] p-[10px] rounded-lg text-white mb-4 capitalize">reset password</button>
+            <button class="bg-[#0D6EFD] inline-block text-[14px] p-2.5 rounded-lg text-white mb-4 capitalize">reset password</button>
            
         </nuxt-link>
 
@@ -27,3 +27,10 @@
 
     </div>
 </template>
+
+
+<script setup>
+definePageMeta({
+    layout: "loginlayout",
+})
+</script>

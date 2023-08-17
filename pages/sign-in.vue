@@ -1,4 +1,7 @@
 <script setup>
+definePageMeta({
+    layout: "loginlayout",
+})
 const show = ref(true)
 const showMenu = ()=>{
     show.value = !show.value
