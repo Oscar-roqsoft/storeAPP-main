@@ -53,24 +53,12 @@
                   
             </div>
             <div @click="currentslide" class="fixed w-full top-[38rem] px-4">
-                <button v-show="count === 0"  class=" w-full inline-flex justify-center items-center overflow-hidden p-0.5 text-[14px] font-[700]
-              text-black bg-gradient-to-br  from-orange-400 via-yellow-500 to-orange-400 hover:from-red-400 
-                hover:via-red-300 hover:to-yellow-400 
-                 rounded-lg  capitalize">
-                  <span class=" bg-white w-full rounded-lg hover:bg-opacity-0">get started</span>
-                </button>
-                <button v-show="count === 1"  class=" w-full inline-flex justify-center items-center overflow-hidden p-0.5 text-[14px] font-[700]
-              text-black bg-gradient-to-br  from-orange-400 via-yellow-500 to-orange-400 hover:from-red-400 
-                hover:via-red-300 hover:to-yellow-400 
-                 rounded-lg  capitalize">
-                  <span class=" bg-white w-full rounded-lg hover:bg-opacity-0">next</span>
-                </button>
-                <button v-show="count === 2"  class=" w-full inline-flex justify-center items-center overflow-hidden p-0.5 text-[14px] font-[700]
-              text-black bg-gradient-to-br  from-orange-400 via-yellow-500 to-orange-400 hover:from-red-400 
-                hover:via-red-300 hover:to-yellow-400 
-                 rounded-lg  capitalize">
-                  <span class=" bg-white w-full rounded-lg hover:bg-opacity-0">next</span>
-                </button>
+                <button  v-show="count === 0" class="w-full inline-block  text-[14px]
+                 bg-white text-black border rounded-lg font-medium capitalize">get started</button>
+                 <button  v-show="count === 1" class="w-full inline-block  text-[14px]
+                 bg-white text-black border rounded-lg font-medium capitalize">next</button>
+                 <button  v-show="count === 2" class="w-full inline-block  text-[14px]
+                 bg-white text-black border rounded-lg font-medium capitalize">next</button>
             </div>
         </div>
     </div>

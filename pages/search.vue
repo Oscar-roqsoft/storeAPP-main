@@ -28,12 +28,12 @@
 
                 <div>
                     <div class="capitalize flex h-[24px] justify-start items-center mb-[19px]">
-                        <div class="h-[22px] w-[22px]"><ClockIcon class="text-[22px]"/></div>
+                        <div class="h-[22px] w-[22px]"> <ClockIcon class="text-[22px]"/></div>
                         <p class="px-[15px] text-[14px] font-[Raleway] font-[500]">New Shoes</p>
                     </div>
 
                     <div class="capitalize flex h-[24px] items-center mb-[19px]">
-                        <div class="h-[22px] w-[22px]"><ClockIcon class="text-[22px]"/></div>
+                        <div class="h-[22px] w-[22px]"> <ClockIcon class="text-[22px]"/></div>
                         <p class="px-[15px] text-[14px] font-[Raleway] font-[500]">Nike Top Shoes</p>
                     </div>
                 </div>
